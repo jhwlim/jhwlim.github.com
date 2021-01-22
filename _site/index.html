@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>Welcome Blog</title>
-<meta name="description" content="공부한 것을 기록하는 공간">
+<meta name="description" content="This post should display a header with an overlay image, if the theme supports it.">
 
 
   <meta name="author" content="LJH">
@@ -24,9 +24,11 @@
 <meta property="og:url" content="https://jhwlim.github.io/">
 
 
-  <meta property="og:description" content="공부한 것을 기록하는 공간">
+  <meta property="og:description" content="This post should display a header with an overlay image, if the theme supports it.">
 
 
+
+  <meta property="og:image" content="https://jhwlim.github.io/assets/images/unsplash-gallery-image-2.jpg">
 
 
 
@@ -44,6 +46,8 @@
 <link rel="canonical" href="https://jhwlim.github.io/">
 
 
+
+  <link rel="next" href="https://jhwlim.github.io/page2/">
 
 
 <script type="application/ld+json">
@@ -103,7 +107,7 @@
 
   </head>
 
-  <body class="layout--home">
+  <body class="layout--home wide">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -127,11 +131,23 @@
           <a class="site-logo" href="/"><img src="/assets/images/site-logo.png" alt=""></a>
         
         <a class="site-title" href="/">
-          Welcome Blog
+          masthead_title 
           <span class="site-subtitle">Version 1.0</span>
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/">Quick-Start Guide</a>
+              <a href="/categories/">Categories</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/java">categories/java</a>
+            </li><li class="masthead__menu-item">
+              <a href="/collection/">collection</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Sample Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/collection-archive/">Sample Collections</a>
+            </li><li class="masthead__menu-item">
+              <a href="/terms/">Terms &amp; Privacy Policy</a>
             </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -147,6 +163,50 @@
 
     <div class="initial-content">
       
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/unsplash-gallery-image-2.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Welcome Blog
+
+        
+      </h1>
+      
+        <p class="page__lead">This post should display a <strong>header with an overlay image</strong>, if the theme supports it.
+</p>
+      
+      
+
+
+      
+      
+        <p>
+        
+          <a href="https://unsplash.com" class="btn btn--light-outline btn--large">More Info</a>
+        
+          <a href="https://github.com" class="btn btn--light-outline btn--large">Download</a>
+        
+      
+    </div>
+  
+  
+    <span class="page__hero-caption">Photo credit: <a href="https://unsplash.com"><strong>Unsplash</strong></a>
+</span>
+  
+</div>
+
+
 
 
 
@@ -183,10 +243,24 @@
     <ul class="author__urls social-icons">
       
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Korea</span>
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Republic of Korea</span>
         </li>
       
 
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
       
 
       
@@ -256,13 +330,109 @@
 </div>
 
   
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">토글 메뉴</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <a href="/categories/"><span class="nav__sub-title">All</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Basic</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/categories/basic/java/">Java</a></li>
+          
+            <li><a href="/categories/basic/sql/">SQL</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">BackEnd</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/categories/backend/jsp/">JSP</a></li>
+          
+            <li><a href="/categories/backend/spring/">Spring</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">FrontEnd</span>
+        
+
+        
+        <ul>
+          
+            <li><a href="/categories/frontend/html">HTML</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">DB</span>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">Git</span>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          <span class="nav__sub-title">CS</span>
+        
+
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
   </div>
 
 
 
   <div class="archive">
-    
-      <h1 id="page-title" class="page__title"></h1>
     
     
 
@@ -273,8 +443,239 @@
 
 <div class="entries-list">
   
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/java/first-post/" rel="permalink">첫번째 글입니다.
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-01-21T00:00:00+00:00">January 21, 2021</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">GitHub Blog 서비스인 github.io 블로그 시작하기로 했다.
+</p>
+  </article>
 </div>
 
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/jekyll/post-exclude-search/" rel="permalink">Exclude Post from Search Index
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2017-11-28T00:00:00+00:00">November 28, 2017</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">This post should not appear in the search index because it has the following YAML Front Matter:
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/layout/uncategorized/layout-header-video/" rel="permalink">Layout: Header Video
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2017-01-23T00:00:00+00:00">January 23, 2017</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">This post should display a header with a responsive video, if the theme supports it.
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/jekyll/gemified-theme-beta/" rel="permalink">Gemified Theme – Beta Release
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2016-10-06T00:00:00+00:00">October 6, 2016</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Hot on the heels of Jekyll v3.3.0 is a beta release of Minimal Mistakes… as a gemified theme.
+</p>
+  </article>
+</div>
+
+  
+    
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/jekyll/gemified-theme-alpha/" rel="permalink">Gemified Theme – Alpha Release
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2016-09-21T00:00:00+00:00">September 21, 2016</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Jekyll themes distributed as Ruby gems are finally here to make installing and upgrading much easier. Gone are the days of forking a repo just to “install it...</p>
+  </article>
+</div>
+
+  
+</div>
+
+
+<nav class="pagination">
+  
+  <ul>
+    
+    
+    <li><a href="#" class="disabled"><span aria-hidden="true">이전</span></a></li>
+    
+
+    
+    
+      <li><a href="#" class="disabled current">1</a></li>
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+        
+        
+        
+        <li><a href="/page2/">2</a></li>
+      
+    
+      
+        
+        
+        
+        <li><a href="/page3/">3</a></li>
+      
+    
+
+    
+    
+      <li><a href="#" class="disabled">&hellip;</a></li>
+    
+
+    
+      <li><a href="/page14/">14</a></li>
+    
+
+    
+    
+      <li><a href="/page2/">다음</a></li>
+    
+  </ul>
+</nav>
 
 
 
