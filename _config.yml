@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "air" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
@@ -25,8 +25,8 @@ url                      : "https://jhwlim.github.io" # the base hostname & prot
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "jhwlim/jhwlim.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # "/assets/images/500x300.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/site-logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "masthead_title " # overrides the website title displayed in the masthead, use " " for no title
+logo                     : # "/assets/images/home.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : "공부하고 기록하는 공간" # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -93,30 +93,30 @@ analytics:
 
 # Site Author
 author:
-  name             : "LJH"
-  avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "기록하는 개발자"
-  location         : "Republic of Korea"
+  name             : "개발자 지망생"
+  avatar           : "/assets/images/code.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "(jhwlim25@gmail.com)"
+  # location         : "Republic of Korea"
   email            : "jhwlim25@gmail.com"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+  # links:
+  #   - label: "Email"
+  #     icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+  #   - label: "Website"
+  #     icon: "fas fa-fw fa-link"
+  #     # url: "https://your-website.com"
+  #   - label: "Twitter"
+  #     icon: "fab fa-fw fa-twitter-square"
+  #     # url: "https://twitter.com/"
+  #   - label: "Facebook"
+  #     icon: "fab fa-fw fa-facebook-square"
+  #     # url: "https://facebook.com/"
+  #   - label: "GitHub"
+  #     icon: "fab fa-fw fa-github"
+  #     # url: "https://github.com/"
+  #   - label: "Instagram"
+  #     icon: "fab fa-fw fa-instagram"
+  #     # url: "https://instagram.com/"
 
 # Site Footer
 footer:
@@ -271,30 +271,34 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "_posts"
       type: posts
     values:
       layout: single
+      classes: wide
       author_profile: true
       read_time: false
       show_date: true
       comments: true
       share: true
       sidebar:
-        nav: "docs"
-  # _docs
-  - scope:
-      path: ""
-      type: docs
-    values:
-      layout: default
-      sidebar:
-        nav: "docs"
-  
+        nav: "sidebar"
+      header:
+        image: /assets/images/unsplash-gallery-image-2.jpg
+        
+  # _pages
   - scope:
       path: "_pages"
       type: pages
     value: 
-      layout: single
-      
+      layout: "single"
+      classes: wide
+      sidebar:
+        nav: "sidebar"
+      header:
+        # image: /assets/images/unsplash-gallery-image-2.jpg
+        # overlay_image: /assets/images/unsplash-gallery-image-2.jpg
+        # show_overlay_excerpt: false;
+        # overlay_filter: rgba(0, 0, 0, 0.5)
+
 

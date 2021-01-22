@@ -216,7 +216,9 @@ body {
 
 .page__hero-image {
   width: 100%;
-  height: auto;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
   -ms-interpolation-mode: bicubic;
 }
 
@@ -291,6 +293,9 @@ body {
   a {
     color: inherit;
   }
+}
+header > .page__meta {
+  text-align: right;
 }
 
 .page__meta-title {
