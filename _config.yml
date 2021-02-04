@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "default", "air", "aqua", "contrast", "da
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Welcome Blog"
+title                    : "Welcome to MyBlog"
 title_separator          : "-"
 subtitle                 : "Version 1.0" # site tagline that appears below site title in masthead
 name                     : "LJH"
@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "개발자 지망생"
-  avatar           : "/assets/images/code.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile_coffee.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "(jhwlim25@gmail.com)"
   # location         : "Republic of Korea"
   email            : "jhwlim25@gmail.com"
@@ -271,31 +271,34 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: "_posts"
+      path: ""
       type: posts
     values:
       layout: single
-      classes: wide
+      # classes: wide
       author_profile: true
       read_time: false
       show_date: true
       comments: true
       share: true
+      toc: true
+      toc_sticky: true
       sidebar:
         nav: "sidebar"
       header:
-        image: /assets/images/unsplash-gallery-image-2.jpg
+        image: /assets/images/header_code.jpg
+        caption: "Photo credit: [**Pixabay**](https://pixabay.com/ko/)"
         
   # _pages
-  - scope:
-      path: "_pages"
-      type: pages
-    value: 
-      layout: "single"
-      classes: wide
-      sidebar:
-        nav: "sidebar"
-      header:
+  # - scope:
+  #     path: ""
+  #     type: pages
+  #   value: 
+  #     layout: single
+  #     classes: wide
+  #     sidebar:
+  #       nav: "sidebar"
+      # header:
         # image: /assets/images/unsplash-gallery-image-2.jpg
         # overlay_image: /assets/images/unsplash-gallery-image-2.jpg
         # show_overlay_excerpt: false;
