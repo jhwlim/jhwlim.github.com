@@ -6,17 +6,16 @@ tags: spring spring-mvc setting pom.xml
 ---
 ## 1. Spring MVC 프로젝트 생성하기
 
-1. Eclipse 상단의 `[File]-[New]-[Spring Legacy Project]`를 클릭
+- Eclipse 상단의 `[File]-[New]-[Spring Legacy Project]` 클릭
 
-- 프로젝트 이름을 작성하고, `Spring MVC Project`를 선택한 뒤 `Next`
+- 프로젝트 이름을 작성하고, `Spring MVC Project` 선택한 뒤 `Next`
 
-<img src="/assets/images/_posts/2021-03-16/004_20210316.png" alt="프로젝트 생성 1번 이미지" width="80%">
+    <img src="/assets/images/post/20210316/004_20210316.png" alt="프로젝트 생성 1번 이미지" width="80%">
 
 - 프로젝트 패키지 경로를 작성한 뒤, `Finish` 
   (이때, 패키지 경로는 3단계로, 도메인주소를 거꾸로 작성한다.)
 
-<img src="/assets/images/_posts/2021-03-16/003_20210316.png" alt="프로젝트 생성 2번 이미지" width="80%">
-
+    <img src="/assets/images/post/20210316/003_20210316.png" alt="프로젝트 생성 2번 이미지" width="80%">
 
 ## 2. 프로젝트 구조
 
