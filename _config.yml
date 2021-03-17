@@ -276,15 +276,15 @@ defaults:
     values:
       layout: single
       # classes: wide
-      author_profile: true
+      author_profile: false
       read_time: false
       show_date: true
       comments: true
       share: true
       toc: true
       toc_sticky: true
-      sidebar:
-        nav: "sidebar"
+      # sidebar:
+        # nav: "sidebar"
       header:
         image: /assets/images/header_code.jpg
         caption: "Photo credit: [**Pixabay**](https://pixabay.com/ko/)"

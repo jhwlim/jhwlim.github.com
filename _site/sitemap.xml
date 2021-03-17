@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://jhwlim.github.io/java/first-post/</loc>
-<lastmod>2021-01-21T00:00:00+00:00</lastmod>
+<loc>https://jhwlim.github.io/spring/spring-start/</loc>
+<lastmod>2021-03-16T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>https://jhwlim.github.io/spring/spring-basic-1/</loc>
+<lastmod>2021-03-17T00:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>https://jhwlim.github.io/archive-layout-with-content/</loc>
