@@ -10,4 +10,16 @@ var store = [{
         "tags": ["spring","spring-mvc","context-path"],
         "url": "https://jhwlim.github.io/spring/spring-basic-1/",
         "teaser": null
+      },{
+        "title": "Practice 1 1",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "https://jhwlim.github.io/practice-1-1/",
+        "teaser": null
+      },{
+        "title": "Spring WebSocket 튜토리얼 (1)",
+        "excerpt":"들어가기전에 Spring WebSocket을 활용하여 간단한 실시간 채팅을 만들고자 한다. Spring에서 WebSocket은 아래의 2가지 방법으로 구현할 수 있다. WebSocket 데이터를 직접 처리 STOMP 프로토콜을 사용하여 메시지를 처리 1번 방법은 WebSocketHandler를 상속받아 세션 레벨에서 텍스트나 이미지 파일과 같은 Binary 데이터를 직접 Handling이 가능하다. 2번 방법은 STOMP(Simple Text Oriented Messaging Protocol)을 이용하여 메시지를...","categories": ["spring"],
+        "tags": ["spring-websocket","websocket","stomp"],
+        "url": "https://jhwlim.github.io/spring/spring-chat-1/",
+        "teaser": null
       }]
