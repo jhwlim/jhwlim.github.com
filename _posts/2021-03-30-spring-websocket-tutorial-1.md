@@ -115,7 +115,7 @@ public class OutputMessage {
 
 ## 4. MessageHandling Controller 클래스 생성
 
-- `@MessageMapping` : `/app/chat` 경로로 요청한 메시지를 Mapping한다. (WebSocketConfig에서 설정했던 prefix 포함)
+- `@MessageMapping` : WebSocketConfig에서 설정했던 prefix를 포함한 `/app/chat` 경로로 요청한 메시지를 Mapping한다.
 - `@SendTo` : `/topic/messages`를 구독하고 있는 모든 구독자에게 메시지를 보낸다.
 
 ```java
@@ -137,6 +137,8 @@ public class MessageController {
 
 메시지는 JSON 타입으로 파싱하여 보내고 받는다.
 
+### ※ *url* 작성시 주의사항
+소켓을 연결하기 위하여 새로운 SockJS를 생성할 때, context path가 필요하기 때문에 `<c:url>`을 이용하여 *url*을 작성할 수 있다. 하지만 **subscribe와 send의 *url*은 `<c:url>`을 이용하면 제대로 동작되지 않는다.** `<c:url>`을 지우고 작성해야만 정상적으로 통신이 이루어진다.
 
 ```jsp
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -165,7 +167,7 @@ public class MessageController {
         stompClient.connect({}, function(frame) {
             setConnected(true);
             console.log('Connected: ' + frame);
-            stompClient.subscribe('<c:url value="/topic/messages" />', function(messageOutput) { // 구독 url
+            stompClient.subscribe('/topic/messages', function(messageOutput) { // 구독 url
                 showMessageOutput(JSON.parse(messageOutput.body));
             });
         });
@@ -182,7 +184,7 @@ public class MessageController {
     function sendMessage() {
         var from = document.getElementById('from').value;
         var text = document.getElementById('text').value;
-        stompClient.send('<c:url value="/app/chat" />', {}, JSON.stringify({'from':from, 'text':text})); // @MessageMapping url
+        stompClient.send('/app/chat', {}, JSON.stringify({'from':from, 'text':text})); // @MessageMapping url
     }
     
     function showMessageOutput(messageOutput) {
