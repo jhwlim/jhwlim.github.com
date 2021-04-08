@@ -1,8 +1,8 @@
 ---
-title: "Spring WebSocket STOMP를 이용한 실시간 채팅 구현하기"
-excerpt: "Spring WebSocket의 STOMP, @MessageMapping, @SendTo를 이용하여 1:N 채팅 구현하기"
+title: "Spring WebSocket + STOMP를 이용한 실시간 채팅 구현하기"
+excerpt: "Spring WebSocket와 STOMP를 이용하여 1:N 채팅 구현하기"
 categories: spring
-tags: spring-websocket websocket stomp
+tags: spring-websocket websocket STOMP
 ---
 ## Intro
 **WebSocket**은 웹 브라우저와 웹 서버 사이에 bi-directional, full-duplex, persistent connection 통신을 가능하게 하는 통신 프로토콜로, 한번 연결이 이루어지고 나면 연결이 끊어질 때까지 연결이 계속 유지된다는 특징을 가지고 있다. 이 때문에 WebSocket을 사용해서 실시간 채팅 기능을 구현할 수 있다.
@@ -13,7 +13,7 @@ Spring에서는 아래의 2가지 방법으로 WebSocket을 사용할 수 있다
 
 2. STOMP(Simple Text Oriented Messaging Protocol)를 이용하여 메시지를 처리
 
-이번 포스트에서는 2번 방법을 사용하여 간단한 실시간 채팅을 구현해보려고 한다.
+이번 포스트에서는 2번 방법을 사용하여 간단한 실시간 채팅을 만들어보려고 한다.
 
 ## 1. Maven Dependencies
 - 웹소캣 사용을 위한 의존성 라이브러리 추가
@@ -36,18 +36,16 @@ Spring에서는 아래의 2가지 방법으로 WebSocket을 사용할 수 있다
 - 메시지 데이터를 JSON으로 변환하기 위한 의존성 라이브러리 추가
   
 ```xml
-<dependencies>
-    <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-core</artifactId>
-        <version>2.10.2</version>
-    </dependency>		
-    <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-databind</artifactId> 
-        <version>2.10.2</version>
-    </dependency>	
-</dependencies>
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-core</artifactId>
+    <version>2.10.2</version>
+</dependency>		
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId> 
+    <version>2.10.2</version>
+</dependency>	
 ```
 
 ## 2. WebSocket Config 클래스 생성
