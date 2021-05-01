@@ -8,10 +8,10 @@ main:
 sidebar:
   - title: "All"
     url : /categories/
-  - title: "Basic"
-    children:
-        - title: "Data Structure & Algorithm"
-          url: categories/basic/datastructure_algorithm/
+  # - title: "Basic"
+  #   children:
+      #  - title: "Data Structure & Algorithm"
+      #    url: categories/basic/datastructure_algorithm/
       # - title: "Java"
       #   url: /categories/basic/java/ # _pages/categories/basic/java   
       # - title: "SQL"
@@ -21,11 +21,11 @@ sidebar:
       # - title: "JSP"
       #   url: categories/backend/jsp/ # _pages/categories/backend/jsp
       - title: "Spring"
-        url: categories/backend/spring/ # _pages/categories/backend/spring
-  # - title: "FrontEnd"
-  #   children:
-  #     - title: "HTML"
-  #       url: /categories/frontend/html #_pages/categories/frontend/html
+        url: categories/backend/spring # _pages/categories/backend/spring
+  - title: "FrontEnd"
+    children:
+      - title: "Vue"
+        url: /categories/frontend/vue #_pages/categories/frontend/html
   # - title: "DB"
   # - title: "Git"
   # - title: "CS"

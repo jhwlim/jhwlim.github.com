@@ -1,10 +1,10 @@
 ---
 title: "FrontEnd"
-permalink: /categories/frontend/html
+permalink: /categories/frontend/vue
 layout: category
 author_profile: true
 sidebar:
     nav: "sidebar"
-taxonomy: html
+taxonomy: vue.js
 ---
-## HTML
+## Vue.js
