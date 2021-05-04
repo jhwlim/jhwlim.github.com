@@ -4,12 +4,15 @@
 
 .masthead {
   position: relative;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid rgb(58, 58, 58);
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
   z-index: 20;
+  position: sticky;
+  top: 0px;
+  background-color: $border-color;
 
   &__inner-wrap {
     @include clearfix;
@@ -49,8 +52,10 @@
   display: flex;
   -ms-flex-item-align: center;
   align-self: center;
-  font-weight: bold;
+  font-weight: 900;
   // z-index: 20;
+  color: rgb(58, 58, 58) !important;
+  font-size: 30px;
 }
 
 .site-subtitle {
@@ -85,6 +90,7 @@
   display: block;
   list-style-type: none;
   white-space: nowrap;
+  font-weight: 700;
 
   &--lg {
     padding-right: 2em;

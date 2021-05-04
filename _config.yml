@@ -16,17 +16,17 @@ minimal_mistakes_skin    : "default" # "default", "air", "aqua", "contrast", "da
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Welcome to MyBlog"
+title                    : "jhwlim's DevNote"
 title_separator          : "-"
-subtitle                 : "Version 1.0" # site tagline that appears below site title in masthead
+subtitle                 : "" # site tagline that appears below site title in masthead
 name                     : "LJH"
 description              : "공부한 것을 기록하는 공간"
 url                      : "https://jhwlim.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "jhwlim/jhwlim.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # "/assets/images/500x300.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # "/assets/images/home.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "공부하고 기록하는 공간" # overrides the website title displayed in the masthead, use " " for no title
+logo                     : # "/assets/images/tag.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : "DevNote" # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -92,7 +92,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "개발자 지망생"
+  name             : "Jong-Hwan Lim "
   avatar           : "/assets/images/profile_coffee.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "(jhwlim25@gmail.com)"
   # location         : "Republic of Korea"

@@ -1,7 +1,7 @@
 ---
 title: "[Vue.js] Vue.js 시작하기 ③ Vue 인스턴스와 컴포넌트"
 excerpt: ""
-categories: vue.js
+categories: vue
 tags: frontend vue.js
 ---
 ## Introduction

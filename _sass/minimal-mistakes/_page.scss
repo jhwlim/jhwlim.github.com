@@ -67,6 +67,10 @@ body {
       width: 100%;
       clear: both;
     }
+
+    .page__content {
+      width: calc(100% - #{$right-sidebar-width-narrow} - 2em);
+    }
   }
 }
 

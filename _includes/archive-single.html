@@ -10,21 +10,28 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: 'list' }}__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    {% if include.type == "grid" and teaser %}
-      <div class="archive__item-teaser">
-        <img src="{{ teaser | relative_url }}" alt="">
-      </div>
-    {% endif %}
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      {% else %}
-        <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
-      {% endif %}
-    </h2>
-    {% include page__meta.html type=include.type %}
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+<div class="{{ include.type | default: 'list' }}__item" style="margin-bottom: 6px; border-bottom: 1px solid rgb(228, 228, 228);">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork" style="display: flex;">
+    <!-- post teaser image-->
+    <div style="display: inline-block; width: 5em; height: 5em; margin: 10px 20px">
+      <img src="/assets/images/category/{{ post.categories }}.png" alt="" style="width: 100%; height: 100%; object-fit: contain;">
+    </div>
+    <!-- post info -->
+    <div style="margin-left: 10px; display: inline-block; width: calc(100% - 5em - 10px)">
+      <!-- post title -->
+      <h2 class="archive__item-title no_toc" itemprop="headline" style="margin-top: 4px;">
+        {% if post.link %}
+          <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        {% else %}
+          <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+        {% endif %}
+      </h2>
+      {% include page__meta.html type=include.type %} <!-- post date -->
+      <!-- post excerpt 
+      {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %} 
+      -->
+    </div>
+    
   </article>
+  
 </div>

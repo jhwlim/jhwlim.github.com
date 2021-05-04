@@ -1,7 +1,7 @@
 ---
 title: "[Vue.js] Vue.js 시작하기 ⑤ 라우터"
 excerpt: ""
-categories: vue.js
+categories: vue
 tags: frontend vue.js
 ---
 ## Introduction

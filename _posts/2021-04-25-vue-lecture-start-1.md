@@ -1,7 +1,7 @@
 ---
 title: "[Vue.js] Vue.js 시작하기 ① 프로그램 설치 및 기본환경 설정"
 excerpt: ""
-categories: vue.js
+categories: vue
 tags: frontend vue.js
 ---
 

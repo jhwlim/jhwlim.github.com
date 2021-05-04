@@ -5,6 +5,6 @@ layout: category
 author_profile: true
 sidebar:
     nav: "sidebar"
-taxonomy: vue.js
+taxonomy: vue
 ---
 ## Vue.js

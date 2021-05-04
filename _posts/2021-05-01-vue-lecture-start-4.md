@@ -1,7 +1,7 @@
 ---
 title: "[Vue.js] Vue.js 시작하기 ④ 컴포넌트 통신"
 excerpt: ""
-categories: vue.js
+categories: vue
 tags: frontend vue.js
 ---
 ## Introduction
@@ -59,19 +59,20 @@ var appHeader = {
 </div>
 ```
 
-`<Roor>`의 데이터를 변경하면 `<app-header>`의 props 값도 바뀌는 것을 확인할 수 있다.
+`<Root>`의 데이터를 변경하면 `<app-header>`의 props 값도 바뀌는 것을 확인할 수 있다.
 
 ![props-1](/assets/images/post/20210501/props-1.png)
 
 ![props-2](/assets/images/post/20210501/props-2.png)
-
-`{{ }}` 데이터 이름이나 props 이름을 넣어주면 해당 값이 반영되어 화면에 나타난다.
+{% raw %}
+``{{ }}`` 안에 데이터 이름이나 props 이름을 넣어주면 해당 값이 반영되어 화면에 나타난다.
 ```js
 var appHeader = {
     template: '<h1>{{ propsdata }}</h1>',
     props: ['propsdata']
 };
 ```
+{% endraw %}
 <br>
 
 ### 2. Event
