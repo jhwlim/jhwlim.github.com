@@ -24,6 +24,8 @@ sidebar:
         url: categories/backend/spring # _pages/categories/backend/spring
   - title: "FrontEnd"
     children:
+      - title: "Javascript"
+        url: /categories/frontend/js #_pages/categories/frontend/html  
       - title: "Vue"
         url: /categories/frontend/vue #_pages/categories/frontend/html
   # - title: "DB"
