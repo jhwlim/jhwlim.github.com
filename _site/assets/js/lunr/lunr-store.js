@@ -70,4 +70,10 @@ var store = [{
         "tags": ["frontend","vue.js"],
         "url": "https://jhwlim.github.io/vue/vue-lecture-start-5/",
         "teaser": null
+      },{
+        "title": "[JS] Linked List 구현하기",
+        "excerpt":"Introduction (1) Array에서 제공하는 메서드를 사용하지 않고, Linked List를 구현해야 하는 이유를 정리해보고, (2) Linked List를 직접 구현해보려고 한다. Array의 shift()와 unshift() 자바스크립트의 배열는 다양한 메서드를 제공하고 있다. 배열의 끝에 데이터를 추가하고 삭제하는 것 뿐만 아니라, shift()와 unshift() 메서드를 사용하여 배열의 맨 앞에 데이터를 추가하고 삭제할 수 있다. 이러한 기능들은...","categories": ["js"],
+        "tags": ["data-structure","linked-list"],
+        "url": "https://jhwlim.github.io/js/js-basic-linkedlist/",
+        "teaser": null
       }]
