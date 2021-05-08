@@ -6,6 +6,7 @@
 |:--|:--|
 |length|문자열의 길이|
 
+### Methods
 |Method|Parameters|Return|Description|
 |:--|:--|:--|:--|
 |indexOf()|element|Number|
