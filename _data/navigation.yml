@@ -22,12 +22,15 @@ sidebar:
       #   url: categories/backend/jsp/ # _pages/categories/backend/jsp
       - title: "Spring"
         url: categories/backend/spring # _pages/categories/backend/spring
+        category: spring 
   - title: "FrontEnd"
     children:
       - title: "Javascript"
-        url: /categories/frontend/js #_pages/categories/frontend/html  
+        category: js
+        url: /categories/frontend/js #_pages/categories/frontend/html
       - title: "Vue"
-        url: /categories/frontend/vue #_pages/categories/frontend/html
+        category: vue
+        url: /categories/frontend/vue #_pages/categories/frontend/html 
   # - title: "DB"
   # - title: "Git"
   # - title: "CS"
