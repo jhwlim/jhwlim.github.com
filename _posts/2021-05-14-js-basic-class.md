@@ -133,7 +133,7 @@ console.log(Article.publisher); // test
 Article.printPublisher();       // test
 ```
 
-## 상속과 다양성
+## 상속과 다형성
 ### 1. 상속
 `extends` 키워드를 사용하여 클래스를 상속 받을 수 있다.
 ```js
@@ -164,7 +164,7 @@ const rectangle = new Rectangle(20, 20, 'blue');
 rectangle.draw();
 ```
 
-### 2. 다양성
+### 2. 다형성
 상속받은 클래스의 메서드를 재정의할 수 있다.
 ```js
 class Triangle extends Shape {
