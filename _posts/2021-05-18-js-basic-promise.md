@@ -4,7 +4,7 @@ excerpt: ""
 categories: js
 ---
 ## Introduction
-[드림코딩 by 엘리](https://www.youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2) 중 비동기처리 관련 YouTube 영상을 시청하고 공부한 내용에 대해서 정리하려고 한다.
+[드림코딩 by 엘리](https://www.youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2) YouTube 영상 중 비동기처리 관련 영상을 시청하고 공부한 내용에 대해서 정리하려고 한다.
 
 동기와 비동기 처리에 대한 개념을 정리하고, 비동기처리시 Promise 객체를 사용해야하는 이유와 사용방법에 대해서 정리한다.
 
