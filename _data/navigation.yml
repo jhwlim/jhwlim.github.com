@@ -27,10 +27,14 @@ sidebar:
     children:
       - title: "Javascript"
         category: js
-        url: /categories/frontend/js #_pages/categories/frontend/html
+        url: /categories/frontend/js
       - title: "Vue"
         category: vue
-        url: /categories/frontend/vue #_pages/categories/frontend/html 
+        url: /categories/frontend/vue
   # - title: "DB"
   # - title: "Git"
-  # - title: "CS"
+  - title: "CS"
+    children:
+      - title: "자료구조"
+        category: data-structure
+        url: /categories/cs/data-structure
