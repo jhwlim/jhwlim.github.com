@@ -23,6 +23,12 @@ sidebar:
       - title: "Spring"
         url: categories/backend/spring # _pages/categories/backend/spring
         category: spring 
+      - title: "Spring Boot"
+        url: categories/backend/spring-boot
+        category: spring-boot
+      - title: "PHP"
+        url: categories/backend/php
+        category: php
   - title: "FrontEnd"
     children:
       - title: "Javascript"
